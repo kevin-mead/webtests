@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <meta name="Video scroll test" content="Video Test">
+
+    <link rel="stylesheet" href="test1.css" />
+
+    <title>Video Test</title>
+  </head>
+<!--
+- Must be 'muted' in order to autoplay on mobile!
+- More info here: https://webkit.org/blog/6784/new-video-policies-for-ios/
+https://developers.google.com/web/updates/2016/07/autoplay
+-->
+<video autoplay loop muted playsinline>
+  <source src="http://www.w3schools.com/html/mov_bbb.mp4">
+  <source src="http://www.w3schools.com/html/mov_bbb.webm" onerror="fallback(parentNode)">
+  <img src="http://www.w3schools.com/html/mov_bbb.gif">
+</video>
+
+<!-- https://codepen.io/adrianpuescu/pen/bWOEwN -->
